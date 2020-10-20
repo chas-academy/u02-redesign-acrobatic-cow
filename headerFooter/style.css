@@ -1,0 +1,152 @@
+/*variables*/
+:root{
+    --primary: White;
+    --secondary: rgba(0, 0, 0, 0.89);
+    --accent: rgb(105, 105, 2);
+}
+/*resets*/
+body, a, p , ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+
+}
+li{
+    list-style-type: none;
+}
+/*fonts*/
+
+/*base Styles*/ 
+body{
+    background: var(--primary);
+    color: var(--secondary);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: var(--secondary);
+}
+.nav{
+    
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+.menu{
+    margin: 0 30px 0 0 ;
+    z-index: 1;
+}
+.menu a{
+ color: black;
+ margin: 0 10px;
+ line-height: 70px;
+}
+label{
+ margin: 0 40px 0 0;
+ font-size: 26px;
+ line-height: 70px;
+ display: none;
+}
+#toggle{
+ display: none;
+}
+
+ .logo{
+
+     width: 100%;
+     margin: 0;
+     border-bottom: 1px solid black;
+ }
+ .accessiblity{
+     display: block;
+     float: right;
+     width: 20%;
+     position: relative;
+     top: -22px;
+   
+ }
+ .accessiblity a{
+     
+    padding: 10px;
+     line-height: 30px;
+ }
+ span{
+     font-weight: 700;
+  color: var(--accent);
+ }
+ .main{
+    z-index: -1;
+ }
+
+
+/*mobile Style*/ 
+@media screen and (max-width: 620px){
+    label{
+        display: block;
+        cursor: pointer;
+        width: 20%;
+        position: relative;
+        top: -50px;
+        left: 80%;
+        margin: 0;
+    }
+    .nav{
+       height: 1px;
+        width: 100%;
+       
+    }
+    .menu{
+        clear: right;
+        text-align:  center;
+        width: 100%;
+        display: none;
+        height: 100vh;
+        background-color: var(--secondary );
+        position: absolute;
+        top: 0px;
+        pointer-events:none;
+    
+        
+       
+    }
+    .menu a{
+        display: block;
+        margin:0;
+        color: white;
+        z-index: 999;
+       
+        pointer-events: auto;
+    
+    }
+    .menu #down{
+        margin-top: 80px;
+
+    }
+    #toggle:checked+.menu{
+        display:flex;
+        flex-direction:column;
+    }
+    .accessiblity{
+        display: none;
+    }
+    .main p{
+        z-index: -1;
+    }
+   }
+  
+
+/* tablet Stle*/ 
+
+/*Laptops*/
+@media screen and (min-width: 960px){
+
+}
+/*desktopStles*/
+@media screen and (min-width: 1200px){
+
+}
