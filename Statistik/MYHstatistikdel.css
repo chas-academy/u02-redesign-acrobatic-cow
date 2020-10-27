@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box; /*defines how the width and height of an element are calculated. Tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+}
+
+body {
+  margin: 0; /*removing the white border around the website by setting it to o pixels*/
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+}
+
+.container header,
+article,
+aside {
+  padding: 10px;
+  border-bottom: solid black;
+  border-bottom-width: 1px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contentLeft {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-right: solid black;
+  border-right-width: 1px;
+}
+
+.contentLeft-openingParagraph {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contentRight {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.contentLeft-faktablad-Links {
+  line-height: 1em;
+}
+
+.contentRight-Links {
+  /*styling links to stand out a bit from the rest of the content*/
+  position: relative;
+  bottom: 3em;
+  right: 20px;
+  list-style-type: none;
+  line-height: 3.5;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-shadow: 1px rgba(3, 3, 3, 0.274), 1px rgba(14, 13, 13, 0.356);
+  padding: 2em;
+}
+
+/*styling the content-right links seperately to add borders to each one*/
+.yhutbildningar-Link {
+  border-bottom: solid black;
+  border-bottom-width: 1px;
+}
+
+.konstkulturutbildningar-Link {
+  border-bottom: solid black;
+  border-bottom-width: 1px;
+}
+
+.tolkutbildningar-Link {
+  border-bottom: solid black;
+  border-bottom-width: 1px;
+}
+
+.contentRight-image {
+  /*adding fitting picture under the content-right links in a grid column*/
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 20px;
+  width: auto;
+  height: 25em;
+  background-image: url(https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  object-fit: cover;
+}
+
+/*media queries to enable grid boxes to align vertically to fit screens with resolutions and for the image to fit correctly. No media queries needed for 1920 x 1080 since everything lines up correctly at that size*/
+@media (max-width: 1600px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 19em;
+  }
+}
+@media (max-width: 1400px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 17em;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    display: block;
+  }
+  .container > .contentLeft {
+    border-right: none;
+  }
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 40em;
+  }
+}
+@media (max-width: 960px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 35em;
+  }
+}
+@media (max-width: 800px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 30em;
+  }
+}
+@media (max-width: 610px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 25em;
+  }
+}
+@media (max-width: 520px) {
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 20em;
+  }
+}
+@media (max-width: 430px) {
+  /*For Iphone 8 and devices with similar resolution at 414 x 736*/
+  .container > .contentRight > .contentRight-Links > .contentRight-image {
+    width: auto;
+    height: 17em;
+  }
+}
