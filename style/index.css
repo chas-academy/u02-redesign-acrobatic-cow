@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.horizontal-hr{
+    width: 95%;
+    color: gray;
+}
+
+.vertical-line-1{
+    border-left: 1px solid gray;
+    height: 100%;
+    position: absolute;
+    left: 29.7%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.vertical-line-2{
+    border-left: 1px solid gray;
+    height: 100%;
+    position: absolute;
+    left: 70.5%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.utbildning{
+    text-align: center;
+    padding: 20px;
+}
+
+.utbildning ul{
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.utbildning li{
+    padding: 39.5px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #EF9E24;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.section-header h1{
+    padding-top: 40px;
+    margin: 0;
+}
+
+/* Aside left */
+.left {
+    width: 30vw;
+    height: 100vh;
+    float: left;
+}
+
+.right {
+    width: 30vw;
+    height: 100vh;
+    float: right;
+}
+
+.info-text {
+    float: left;
+    padding: 0 14px 12px 20px;
+}
+
+/* Aktuellt Section */
+.aktuellt .container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.aktuellt img{
+    width: 30%;
+    margin-right: 45px;
+    margin-top:10px;
+    float: right;
+}
+
+.items .text{
+    width: 60%;
+    padding: 30px;
+    text-align: center;
+    float: left;
+}
+
+.more .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-a{
+    padding: 5em;
+}
+
+
+.kalender .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.date {
+    padding: 30px;
+}
+
+@media(max-width: 1280px) {
+
+    .utbildning {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right{
+        height: auto;
+    }
+
+    .left{
+        width: 100%;    
+    }
+
+    .image-carousel{
+        display: none;
+    }
+
+    .vertical-line-1, .vertical-line-2 {
+        display: none;
+    }
+
+    .aktuellt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aktuellt img {
+        display: none;
+    }
+
+    .aktuellt .items .text{
+        width: 100%;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .aside-right .container{
+        display: none;
+    }
+
+    .aside-left .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .body-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a {
+        color: #EF9E24;
+    }
+}
+
+@media(max-width: 420px) {
+
+    .image-carousel{
+        display: none;
+    }
+
+    .vertical-line-1, .vertical-line-2 {
+        display: none;
+    }
+
+    .aktuellt{
+        display: none;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .aside-right{
+        display: none;
+    }
+    .body-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
