@@ -1,0 +1,195 @@
+/* -------------------------------- variables ------------------------------- */
+:root {
+    font-size: 15px;
+    --primary: White;
+    --secondary: rgba(0, 0, 0, 0.9);
+    --accent: #fce309;
+    --fontSmall: 0.8rem;
+    --fontMedium: 1rem;
+    --fontLarge: 1.2rem;
+  }
+
+/* --------------------------------- resets --------------------------------- */
+* {
+  box-sizing: border-box;
+}
+body,
+a,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* ---------------------------------- fonts --------------------------------- */
+@font-face{
+  font-family: "Montserrat";
+  src: url("/headerFooter/fonts/Montserrat-Regular.ttf");
+}
+
+/* -------------------------------- base Style ------------------------------- */
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    
+}
+
+/* ------------------------------- mobile Style ------------------------------ */
+@media screen and (max-width: 414px) {
+}
+
+/* ------------------------------- tablet Stle ------------------------------ */
+
+/* ------------------------------ destop style ------------------------------ */
+@media screen and (max-width: 1920px
+) {
+
+header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo . . accessiblity"
+    "logo menu menu profile";
+  grid-area: header;
+  background-color: var(--secondary);
+  color: aliceblue;
+  height: 10vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.logo { grid-area: logo; }
+
+.menu { grid-area: menu;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+
+align-items: center;
+
+
+
+}
+
+.menu a{
+  padding: 10px 25px;
+  color: var(--primary);
+  border-right:  #aacccc 1px solid;
+  border-bottom: black 1px solid;
+}
+.menu :nth-child(1){
+  text-transform: uppercase;
+  background-color: var(--accent);
+  color: black;
+  font-weight: bold;
+  border-left:  black 1px solid;
+}
+
+
+
+.profile { grid-area: profile; 
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+ 
+
+ 
+}
+.profile a{
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: var(--fontSmall);
+  padding: 0 50px;
+
+
+}
+
+.accessiblity { grid-area: accessiblity;  display: flex;
+  justify-content:  center;
+  
+  align-items: flex-start;
+
+
+ }
+ .accessiblity  a{
+  color: var(--primary);
+  padding: 0 10px;
+  font-style: italic;
+  font-size: var(--fontSmall);
+
+ }
+
+/* ---------------------------------- hover --------------------------------- */
+
+ .accessiblity a:hover{
+   border-bottom: var(--accent) 1px solid;
+   background-color: black;
+  
+ 
+ }
+ .menu a:hover{
+
+  border-bottom: var(--accent) 1px solid;
+  background-color: black;
+  color: var(--primary);
+ 
+
+}
+/* ---------------------------------- hover --------------------------------- */
+
+main { grid-area: main; 
+color: green;}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "contact about   more"
+    "contact about   more";
+  grid-area: footer;
+  background-color:rgba(0, 0, 0, 0.473) ;
+
+color: var(--secondary);
+}
+footer a {
+  font-size: var(--fontLarge);
+  color: #fce309;
+}
+footer a:hover{
+  border-bottom: var(--accent) 1px solid;
+  color: var(--secondary);
+}
+footer h2 {
+  text-align: center;
+}
+
+#about  {
+ 
+  grid-area: about;
+
+
+  
+}
+#about a{
+  
+  align-self: stretch;
+
+}
+
+#contact { grid-area: contact; }
+
+#more { grid-area: more; }
+}
