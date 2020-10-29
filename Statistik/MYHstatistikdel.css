@@ -98,7 +98,8 @@ aside {
   font-size: 14px;
   border: none;
   cursor: pointer;
-  margin-left: 2.5em;
+  text-align: center;
+  align-items: center;
 }
 
 /*container needed to position the dropdown content*/
@@ -142,16 +143,16 @@ aside {
   position: relative;
   bottom: 3em;
   right: 20px;
-  list-style-type: none;
   line-height: 3.5;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-shadow: 1px rgba(3, 3, 3, 0.274), 1px rgba(14, 13, 13, 0.356);
   padding: 2em;
+  text-align: center;
 }
 
-/*styling the content-right links seperately to add bottom borders to each one*/
+/*styling the content-right links grids seperately to add bottom borders to each one*/
 .yhutbildningar-Link,
 .konstkulturutbildningar-Link,
 .tolkutbildningar-Link {
@@ -170,6 +171,8 @@ aside {
   background-image: url(https://images.pexels.com/photos/209224/pexels-photo-209224.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-size: cover;
   object-fit: cover;
+  line-height: 3.5;
+  position: relative;
 }
 
 /*media queries to enable grid boxes to align vertically to fit screens with resolutions and for the image to fit correctly. No media queries needed for desktop resolution at 1920 x 1080 since everything lines up correctly at that size*/
@@ -188,10 +191,11 @@ aside {
 @media (max-width: 1100px) {
   .container {
     display: block;
-    text-align: center;
   }
   .container > .contentLeft {
     border-right: none;
+    text-align: center;
+    margin-bottom: 0.5em;
   }
 
   .container > .header {
@@ -241,3 +245,4 @@ aside {
     height: 17em;
   }
 }
+
