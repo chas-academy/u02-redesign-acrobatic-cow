@@ -67,6 +67,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .logo { grid-area: logo; }
@@ -160,6 +161,7 @@ footer {
     "contact about   more"
     "contact about   more";
   grid-area: footer;
+  width: 100%;
   background-color:rgba(0, 0, 0, 0.473) ;
 
 color: var(--secondary);
