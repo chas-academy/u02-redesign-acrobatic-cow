@@ -37,7 +37,6 @@ aside {
   font-size: 30px;
   font-weight: bold;
   color: #222;
-  background: #ffff00;
 }
 
 /*positioning the contentLeft-column so it takes up the main part of the website*/
@@ -201,18 +200,14 @@ a:focus {
     margin-bottom: 0.5em;
   }
 
+  .container > .contentRight {
+    border-right: none;
+    margin-left: 35px;
+  }
+
   /*centered header and changed some values to the gradient background*/
   .container > .header {
     text-align: center;
-    background: rgb(205, 186, 54);
-    background: radial-gradient(
-      circle,
-      rgba(205, 186, 54, 1) 0%,
-      rgba(215, 188, 5, 1) 18%,
-      rgba(176, 151, 4, 1) 46%,
-      rgba(143, 122, 3, 1) 66%,
-      rgba(119, 102, 1, 1) 100%
-    );
   }
   .container > .contentRight > .contentRight-Links > .contentRight-image {
     width: auto;
@@ -247,8 +242,6 @@ a:focus {
   /*For Iphone 8 and devices with similar resolution at 414 x 736*/
   .container > .contentRight > .contentRight-Links > .contentRight-image {
     width: auto;
-    height: 17em;
+    height: 14em;
   }
 }
-
-
