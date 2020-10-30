@@ -7,7 +7,7 @@ body {
   font-family: "Oswald", sans-serif;
   width: 100%;
   color: #222;
-  background-color: rgba(255, 255, 255, 0.877);
+  background-color: white;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 /*container using a grid-based layout system*/
 .container {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5px;
   grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
 }
 
@@ -88,18 +88,20 @@ aside {
   grid-column-start: 3;
   grid-column-end: 4;
   background-color: rgba(255, 255, 255, 0.884);
+  margin-top: 5px;
 }
 
 /*styling button for dropdown menu*/
 .dropbox {
   background-color: #fdfdfd;
   color: rgb(3, 3, 3);
-  padding: 1em;
-  font-size: 14px;
+  padding: 0.5em;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   text-align: center;
   align-items: center;
+  font-family: "Oswald", sans-serif;
 }
 
 /*container needed to position the dropdown content*/
@@ -129,7 +131,8 @@ aside {
 }
 
 /*change color of dropdown links on hover*/
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+a:focus {
   background-color: #f1f1f1;
 }
 
@@ -138,7 +141,12 @@ aside {
   display: block;
 }
 
-/*styling links to stand out a bit from the rest of the content*/
+/*hover to show dropdown menu */
+.dropdown:focus .dropdown-content {
+  display: block;
+}
+
+/*styling links*/
 .contentRight-Links {
   position: relative;
   bottom: 3em;
@@ -175,7 +183,7 @@ aside {
   position: relative;
 }
 
-/*media queries to enable grid boxes to align vertically to fit screens with resolutions and for the image to fit correctly. No media queries needed for desktop resolution at 1920 x 1080 since everything lines up correctly at that size*/
+/*lots of media queries, primarely to make the image fit correctly on most common resolutions/screen sizes. Also used to make grid boxes align correctly. No media queries needed for desktop resolution at 1920 x 1080 since everything lines up correctly at that size*/
 @media (max-width: 1600px) {
   .container > .contentRight > .contentRight-Links > .contentRight-image {
     width: auto;
@@ -188,17 +196,21 @@ aside {
     height: 17em;
   }
 }
+/*changing the display property on the container to block, so the content aligns responsivly on devices with lower than 1100px*/
 @media (max-width: 1100px) {
   .container {
     display: block;
   }
+  /*common practice is to make text align to the left, but it looked better to center it for smaller screens*/
   .container > .contentLeft {
     border-right: none;
     text-align: center;
     margin-bottom: 0.5em;
   }
 
+  /*centered header and changed some values to the gradient background*/
   .container > .header {
+    text-align: center;
     background: rgb(205, 186, 54);
     background: radial-gradient(
       circle,
@@ -245,4 +257,5 @@ aside {
     height: 17em;
   }
 }
+
 
