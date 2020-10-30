@@ -84,36 +84,6 @@ article h2{
     text-align: left;
 }
 
-/** NAVBAR **/
-.topnav {
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  
-  .topnav a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    opacity: 0.6;
-    transition: 0.3s;
-    display: inline-block;
-  }
-  
-  .topnav a:hover {
-    background-color: #f0eeee;
-    color: black;
-    opacity: 1;
-  }
-  
-  .topnav a.active {
-    background-color: #ccc;
-    color: #000;
-  }
-  /** NAVBAR **/
 
 
     @media only screen and (max-width: 800px) {
