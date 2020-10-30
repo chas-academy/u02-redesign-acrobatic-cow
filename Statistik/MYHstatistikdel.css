@@ -142,7 +142,7 @@ a:focus {
 }
 
 /*hover to show dropdown menu */
-.dropdown:focus .dropdown-content {
+.dropdown:focus-within .dropdown-content {
   display: block;
 }
 
