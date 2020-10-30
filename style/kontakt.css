@@ -57,9 +57,6 @@ input[type=text], select, textarea{
     #right{
         border:none;
     }
-    main{
-        border:none;
-    }
     p{
         width:85%;
     }
