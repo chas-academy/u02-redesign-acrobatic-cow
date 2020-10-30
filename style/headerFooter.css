@@ -2,7 +2,7 @@
 :root {
   --primary: rgb(241, 240, 240);
   --secondary: rgba(0, 0, 0, 0.9);
-  --accent: rgb(177, 105, 18);
+  --accent: yellow;
   --fontSmall: 0.9rem;
   --fontMedium: 1.2rem;
   --fontLarge: 1.4rem;
