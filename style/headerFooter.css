@@ -1,6 +1,6 @@
 /* -------------------------------- variables ------------------------------- */
 :root {
-  --primary: rgb(241, 240, 240);
+  --primary: white;
   --secondary: rgba(0, 0, 0, 0.9);
   --accent: yellow;
   --fontSmall: 0.9rem;
