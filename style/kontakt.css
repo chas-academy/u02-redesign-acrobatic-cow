@@ -3,25 +3,27 @@
     margin: 0;
     font-family: 'Oswald', sans-serif;
 }
-body{
-    width: 96%;
-    margin: auto;
-}
 h1{
-    padding: 10px
+    padding: 10px;
+    margin-left: 2%;
 }
-main{
+#main{
     height: 100%;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    width: 96%;
+    margin: auto;
 }
 article{
     width: 49%;
     height: 100%;
+}
+#left{
     float: left;
 }
 #right{
     border-left: 1px solid gray;
+    float: right;
 }
 section{
     padding: 10px;
@@ -46,6 +48,13 @@ input[type=text], select, textarea{
     margin-top: 6px; 
     margin-bottom: 16px;
     resize: vertical;
+}
+footer{
+    float: left;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media screen and (max-width:414px)
