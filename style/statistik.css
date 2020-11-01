@@ -25,10 +25,12 @@ a {
 .container h1,
 article,
 aside {
+  
   padding: 10px;
   border-bottom: solid black;
   border-bottom-width: 1px;
 }
+
 
 /*positioning the header-column so it spans and aligns correctly*/
 .statistikHeader {
@@ -58,6 +60,7 @@ aside {
 /*styling the left links to have some space between eachother vertically*/
 .contentLeft-statÅrsrapporter-Links,
 .contentLeft-faktablad-Links {
+  margin-top: 0.5em;
   line-height: 1.5em;
 }
 
