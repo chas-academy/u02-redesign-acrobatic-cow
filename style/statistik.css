@@ -31,7 +31,7 @@ aside {
 }
 
 /*positioning the header-column so it spans and aligns correctly*/
-.header {
+.statistikHeader {
   grid-column-start: 1;
   grid-column-end: 4;
   font-size: 30px;
