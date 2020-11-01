@@ -20,6 +20,7 @@ body{
     left: 29.7%;
     margin-left: -3px;
     top: 0;
+    z-index: -1;
 }
 
 .vertical-line-2{
@@ -29,6 +30,7 @@ body{
     left: 70.5%;
     margin-left: -3px;
     top: 0;
+    z-index: -1;
 }
 
 .utbildning{
@@ -198,6 +200,13 @@ a:hover {
     a {
         color: #EF9E24;
     }
+}
+footer{
+    float: left;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media(max-width: 420px) {

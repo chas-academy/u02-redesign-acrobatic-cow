@@ -1,6 +1,6 @@
 /* -------------------------------- variables ------------------------------- */
 :root {
-  --primary: white;
+  --primary: rgb(241, 240, 240);
   --secondary: rgba(0, 0, 0, 0.9);
   --accent: yellow;
   --fontSmall: 0.9rem;
@@ -12,7 +12,6 @@
 /* --------------------------------- resets --------------------------------- */
 * {
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
 }
 body,
 a,
@@ -41,7 +40,6 @@ li {
   .menu {
     position: sticky;
     width: 100%;
-
     top: 0;
     z-index: 1;
   }
@@ -53,7 +51,7 @@ li {
     border-bottom-right-radius: 20px;
     position: absolute;
     width: 80%;
-    height: 50vh;
+    height: 55vh;
     background-color: rgba(0, 0, 0, 0.74);
     clip-path: polygon(-100% -10%, -100% 10%, -100% -100%, 1% -100%);
     -webkit-clip-path: polygon(-100% -10%, -100% 10%, -100% -100%, 1% -100%);
@@ -106,12 +104,12 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: var(--secondary);
   }
   #accessiblity li a {
     color: var(--primary);
-    padding: 10px;
+    
     border-bottom: solid 1px var(--accent);
   }
 
@@ -219,6 +217,7 @@ li {
       "header header header header"
       "main main main main"
       "footer footer footer footer";
+      overflow-x: hidden;
   }
 
   header {
@@ -237,6 +236,7 @@ li {
     top: 0;
     border: black 1px solid;
     background-color: var(--secondary);
+    
   }
 
   .logo {
@@ -277,6 +277,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   .profile a {
     color: var(--secondary);
@@ -295,7 +296,7 @@ li {
     justify-content: center;
     align-items: flex-start;
     height: 50px;
-    position: relative;
+    
   }
   .accessiblity a {
     color: var(--secondary);
@@ -359,19 +360,22 @@ li {
     color: var(--secondary);
   }
   footer h2 {
-    text-align: center;
+    border-bottom: 1px solid grey;
   }
 
   #about {
     grid-area: about;
+    text-align: center;
   }
 
   #contact {
     grid-area: contact;
+    text-align: center;
   }
 
   #more {
     grid-area: more;
+    text-align: center;
   }
 }
 
@@ -390,6 +394,7 @@ li {
       "header header header header"
       "main main main main"
       "footer footer footer footer";
+      overflow-x: hidden;
   }
 
   header {
@@ -406,6 +411,8 @@ li {
     top: 0;
     border: black 1px solid;
     background-color: var(--secondary);
+   
+    
   }
 
   .logo {
@@ -446,6 +453,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+   
   }
   .profile a {
     color: var(--secondary);
@@ -465,6 +473,7 @@ li {
     align-items: flex-start;
     height: 50px;
     position: relative;
+   
   }
   .accessiblity a {
     color: var(--secondary);
@@ -518,6 +527,7 @@ li {
   footer h2,
   footer h3 {
     color: var(--accent);
+    
   }
   footer a {
     font-size: var(--fontMedium);
@@ -528,18 +538,21 @@ li {
     color: var(--secondary);
   }
   footer h2 {
-    text-align: center;
+    border-bottom: 1px solid grey;
   }
 
   #about {
     grid-area: about;
+    text-align: center;
   }
 
   #contact {
     grid-area: contact;
+    text-align: center;
   }
 
   #more {
     grid-area: more;
+    text-align: center;
   }
 }

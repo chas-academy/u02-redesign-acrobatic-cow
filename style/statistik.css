@@ -22,7 +22,7 @@ a {
 }
 
 /*styling columns*/
-.container header,
+.container h1,
 article,
 aside {
   padding: 10px;
@@ -31,7 +31,7 @@ aside {
 }
 
 /*positioning the header-column so it spans and aligns correctly*/
-.header {
+.statistikHeader {
   grid-column-start: 1;
   grid-column-end: 4;
   font-size: 30px;
@@ -206,7 +206,7 @@ a:focus {
   }
 
   /*centered header*/
-  .container > .header {
+  .container > h1 {
     text-align: center;
   }
   .container > .contentRight > .contentRight-Links > .contentRight-image {
