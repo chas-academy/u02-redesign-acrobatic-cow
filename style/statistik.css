@@ -59,6 +59,7 @@ aside {
 /*styling the left links to have some space between eachother vertically*/
 .contentLeft-statÅrsrapporter-Links,
 .contentLeft-faktablad-Links {
+  margin-top: 0.5em;
   line-height: 1.5em;
 }
 
