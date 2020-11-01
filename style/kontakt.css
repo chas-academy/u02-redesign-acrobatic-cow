@@ -14,7 +14,7 @@ h1{
     width: 96%;
     margin: auto;
 }
-article{
+#main article{
     width: 49%;
     height: 100%;
 }
@@ -25,21 +25,21 @@ article{
     border-left: 1px solid gray;
     float: right;
 }
-section{
+#main section{
     padding: 10px;
 }
-img{
+#left img{
     width: 80%
 }
-p{
+#main p{
     padding: 10px 0;
     width: 80%;
 }
-li{
+#main li{
     padding: 10px 0;
     list-style-type: none;
 }
-input[type=text], select, textarea{
+#main input[type=text], select, textarea{
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -59,14 +59,14 @@ footer{
 
 @media screen and (max-width:414px)
 {
-    article{
+    #main article{
         width:100%;
         height: auto;
     }
     #right{
         border:none;
     }
-    p{
+    #main p{
         width:85%;
     }
 }
