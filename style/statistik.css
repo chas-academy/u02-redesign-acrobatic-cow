@@ -22,7 +22,7 @@ a {
 }
 
 /*styling columns*/
-.container heading,
+.container h1,
 article,
 aside {
   padding: 10px;
@@ -206,7 +206,7 @@ a:focus {
   }
 
   /*centered header*/
-  .container > .header {
+  .container > h1 {
     text-align: center;
   }
   .container > .contentRight > .contentRight-Links > .contentRight-image {
