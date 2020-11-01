@@ -81,7 +81,6 @@ a:hover {
 }
 
 .info-text {
-    float: left;
     padding: 0 14px 12px 20px;
 }
 
@@ -98,6 +97,8 @@ a:hover {
     margin-top:10px;
     float: right;
 }
+
+
 
 .items .text{
     width: 60%;
@@ -116,6 +117,10 @@ a:hover {
 
 .more-a{
     padding: 5em;
+}
+
+.more-a p{
+    padding: 1.3em;
 }
 
 
@@ -162,7 +167,7 @@ a:hover {
         align-items: center;
         text-align: center;
     }
-
+    
     .aktuellt img {
         display: none;
     }
