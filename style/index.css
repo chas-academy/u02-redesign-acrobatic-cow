@@ -55,18 +55,28 @@ a {
     color: black;
 }
 
+
 a:hover {
     cursor: pointer;
     color: #EF9E24;
+}
+
+.section-header:hover {
+    cursor: pointer;
 }
 
 .section-header{
     text-align: center;
 }
 
+.section-header h2{
+    font-size: 12px;
+}
+
 .section-header h1{
     padding-top: 40px;
     margin: 0;
+    font-size: 30px;
 }
 
 /* Aside left */
@@ -117,9 +127,14 @@ a:hover {
 }
 
 .more-a{
-    padding: 5em;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 400%;
 }
 
+.utbildning ul li a {
+    font-size:18px;
+}
 
 .kalender .container {
     display: flex;
@@ -127,6 +142,14 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.kalender h4{
+    font-size: 18px;
+}
+
+.kalender p{
+    font-size: 18px;
 }
 
 .date {
