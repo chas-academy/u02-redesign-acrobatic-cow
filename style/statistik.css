@@ -25,14 +25,12 @@ a {
 .container h1,
 article,
 aside {
-<<<<<<< HEAD
   
-=======
->>>>>>> c86eeb655b98d5036ff037460478ee8748d4337c
   padding: 10px;
   border-bottom: solid black;
   border-bottom-width: 1px;
 }
+
 
 /*positioning the header-column so it spans and aligns correctly*/
 .statistikHeader {

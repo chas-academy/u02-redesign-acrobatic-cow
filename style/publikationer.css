@@ -9,12 +9,12 @@ body{
 
 a{
     text-decoration: none;
-    color: rgba(166,175,28,1);
+    color: #222;
 }
 
 a:hover{
     cursor: pointer;
-    color:  blue;
+    color: #EF9E24;
 }
 
 #header{
@@ -46,14 +46,4 @@ header .container p{
     max-width: 960px;
     padding-bottom: 2em;
     border-bottom: 1px solid gray;
-}
-
-a{
-    text-decoration: none;
-    color: rgba(166,175,28,1);
-}
-
-a:hover{
-    cursor: pointer;
-    color:  blue;
 }
