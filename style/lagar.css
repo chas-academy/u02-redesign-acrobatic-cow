@@ -1,0 +1,84 @@
+
+body {
+   font-family: 'Oswald', sans-serif;
+}
+
+
+
+p{
+    color: #222;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    justify-content: space-between;
+}
+h1 {
+    color: #222;
+    margin-bottom: 40px;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0;
+    padding-bottom: 22px;
+    padding-left: 25px;
+}
+
+h4{
+    color: #222;
+    font-size: 20px;
+}
+
+#text {
+    width: 65vw;
+    font-size: 16px;
+}
+#text, #subnav {
+    font-size: 16px;
+}
+#subnav {
+    list-style-type: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    line-height: 3.5;
+}
+#subnav li a {
+    text-decoration: none;
+    color: white;
+}
+#content div img {
+    width: 65vw;
+    margin-top: 1em;
+}
+#subcontainer {
+    background-color: #2C2C2C;
+    color: white;
+    padding: 5px 10px 5px 25px;
+}
+#brister {
+    width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        text-align: center;
+    }  
+    #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #text {
+        width: 90vw;
+    }
+  
+    #subnav {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+    #content div img {
+    width: 90vw;
+    }
+}

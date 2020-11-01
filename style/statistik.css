@@ -22,16 +22,18 @@ a {
 }
 
 /*styling columns*/
-.container header,
+.container h1,
 article,
 aside {
+  
   padding: 10px;
   border-bottom: solid black;
   border-bottom-width: 1px;
 }
 
+
 /*positioning the header-column so it spans and aligns correctly*/
-.header {
+.statistikHeader {
   grid-column-start: 1;
   grid-column-end: 4;
   font-size: 30px;
@@ -58,6 +60,7 @@ aside {
 /*styling the left links to have some space between eachother vertically*/
 .contentLeft-statÅrsrapporter-Links,
 .contentLeft-faktablad-Links {
+  margin-top: 0.5em;
   line-height: 1.5em;
 }
 
@@ -205,8 +208,8 @@ a:focus {
     margin-left: 35px;
   }
 
-  /*centered header and changed some values to the gradient background*/
-  .container > .header {
+  /*centered header*/
+  .container > h1 {
     text-align: center;
   }
   .container > .contentRight > .contentRight-Links > .contentRight-image {
@@ -245,3 +248,5 @@ a:focus {
     height: 14em;
   }
 }
+
+

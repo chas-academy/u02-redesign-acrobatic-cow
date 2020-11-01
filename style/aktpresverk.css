@@ -1,0 +1,100 @@
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f5f8fa;
+}
+p {
+    line-height: 150%;
+    color: #222;
+    text-align: left;
+}
+
+main{
+    margin-bottom: 40px;
+}
+
+.firsthr{
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-left: 25px;
+    color: #222;
+}
+
+h2{
+    margin-left: 25px;
+    font-size: 20px;
+    color: #222;
+}
+
+h3{
+    text-align: left;
+    color: #00374d
+    
+}
+
+h3:hover{
+    color: #EF9E24;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+hr{
+    width: 97%;
+    border-color: white;
+    background-color: white;
+    margin: 20px auto;
+
+}
+
+main img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.container {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+
+.flexbox-item{
+width: 28%;
+max-height: auto;
+}
+
+.video{
+    padding-top: 30px;
+}
+
+article h2{
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+    @media only screen and (max-width: 800px) {
+        .deviceWidth {width:280px!important; padding:0;}	
+        .center {text-align: center!important;}	 
+        .container{
+            flex-direction: column;
+            
+        }  
+        .flexbox-item{
+            width: 95%;
+            margin: 10px 10px 20px 10px;
+        }
+    }
+
