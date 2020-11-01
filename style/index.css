@@ -20,6 +20,7 @@ body{
     left: 29.7%;
     margin-left: -3px;
     top: 0;
+    z-index: -1;
 }
 
 .vertical-line-2{
@@ -29,6 +30,7 @@ body{
     left: 70.5%;
     margin-left: -3px;
     top: 0;
+    z-index: -1;
 }
 
 .utbildning{
