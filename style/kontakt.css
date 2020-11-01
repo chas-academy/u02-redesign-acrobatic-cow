@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
+    color: #222;
 }
 h1{
     padding: 10px;
@@ -34,6 +35,7 @@ h1{
 #main p{
     padding: 10px 0;
     width: 80%;
+    font-size: 14px;
 }
 #main li{
     padding: 10px 0;

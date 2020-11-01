@@ -2,6 +2,13 @@
 body {
    font-family: 'Oswald', sans-serif;
 }
+
+
+
+p{
+    color: #222;
+}
+
 #content {
     display: flex;
     flex-direction: row;
@@ -9,6 +16,7 @@ body {
     justify-content: space-between;
 }
 h1 {
+    color: #222;
     margin-bottom: 40px;
     font-size: 30px;
     border-bottom: 1px solid gray;
@@ -16,6 +24,12 @@ h1 {
     padding-bottom: 22px;
     padding-left: 25px;
 }
+
+h4{
+    color: #222;
+    font-size: 20px;
+}
+
 #text {
     width: 65vw;
     font-size: 16px;
