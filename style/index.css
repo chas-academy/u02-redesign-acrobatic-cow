@@ -81,7 +81,6 @@ a:hover {
 }
 
 .info-text {
-    float: left;
     padding: 0 14px 12px 20px;
 }
 
@@ -116,6 +115,10 @@ a:hover {
 
 .more-a{
     padding: 5em;
+}
+
+.more-a p{
+    padding: 1.3em;
 }
 
 
