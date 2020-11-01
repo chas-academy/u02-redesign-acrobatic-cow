@@ -14,11 +14,21 @@ p {
     text-align: left;
 }
 
+main{
+    margin-bottom: 40px;
+}
 
-h1, h2 {
-    text-align: left;
-    width: 90%;
-    margin: auto;
+.firsthr{
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+margin-left: 25px;
+}
+
+h2{
+    margin-left: 25px;
 }
 
 h3{
@@ -37,7 +47,7 @@ hr{
     width: 97%;
     border-color: white;
     background-color: white;
-    margin: 30px auto;
+    margin: 20px auto;
 
 }
 
@@ -60,6 +70,9 @@ width: 28%;
 max-height: auto;
 }
 
+video{
+    padding-top: 30px;
+}
 
 article h2{
     font-size: 16px;

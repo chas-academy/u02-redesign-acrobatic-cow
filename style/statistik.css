@@ -25,6 +25,7 @@ a {
 .container h1,
 article,
 aside {
+  
   padding: 10px;
   border-bottom: solid black;
   border-bottom-width: 1px;
