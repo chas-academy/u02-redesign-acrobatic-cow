@@ -201,6 +201,13 @@ a:hover {
         color: #EF9E24;
     }
 }
+footer{
+    float: left;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 @media(max-width: 420px) {
 

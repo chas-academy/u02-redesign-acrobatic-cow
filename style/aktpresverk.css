@@ -11,16 +11,14 @@ body {
 p {
     line-height: 150%;
     color: #222;
-}
-
-p {
     text-align: left;
 }
 
+
 h1, h2 {
-text-align: left;
-width: 90%;
-margin: auto;
+    text-align: left;
+    width: 90%;
+    margin: auto;
 }
 
 h3{
@@ -43,10 +41,11 @@ hr{
 
 }
 
-img {
+main img {
     position: relative;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .container {
